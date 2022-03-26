@@ -18,15 +18,30 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'object-shorthand': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.d.ts', '.tsx'],
     },
     'import/resolver': {
+      node: {
+        moduleDirectory: ['node_modules', 'src/'],
+      },
       typescript: {
         alwaysTryTypes: true,
         project: '.',
+        moduleDirectory: ['node_modules', 'src/'],
+        paths: ['src'],
       },
     },
   },
