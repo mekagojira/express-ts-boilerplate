@@ -1,5 +1,5 @@
-import Action from 'interfaces/Action';
+import Action from 'interfaces/Action'
 
-const helloWorld: Action = async () => 'Hello world';
+const helloWorld: Action = async () => 'Hello world'
 
-export default helloWorld;
+export default helloWorld

@@ -1,5 +1,5 @@
-import { Request, Response } from 'express';
+import { Request, Response } from 'express'
 
-type Action = (_req: Request, _res: Response) => Promise<any>;
+type Action = (_req: Request, _res: Response) => Promise<any>
 
-export default Action;
+export default Action

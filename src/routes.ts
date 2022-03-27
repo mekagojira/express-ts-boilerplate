@@ -1,13 +1,13 @@
-import helloWorld from 'actions/ping/helloWorld/helloWorld';
-import Route from 'interfaces/Route';
+import helloWorld from 'actions/ping/helloWorld/helloWorld'
+import Route from 'interfaces/Route'
 
 const routes: Array<Route> = [
-  {
-    url: '/',
-    auth: false,
-    action: helloWorld,
-    method: 'get',
-  },
-];
+    {
+        url: '/',
+        auth: false,
+        action: helloWorld,
+        method: 'get',
+    },
+]
 
-export default routes;
+export default routes

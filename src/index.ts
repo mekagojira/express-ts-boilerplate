@@ -1,2 +1,2 @@
-import 'setup';
-import 'server';
+import 'setup'
+import 'server'
