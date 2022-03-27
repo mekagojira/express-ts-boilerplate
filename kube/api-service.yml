@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apiservice-deployment
+spec:
+  selector:
+    matchLabels:
+      app: apiservice
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: apiservice
+    spec:
+      containers:
+        - name: apiservice
+          image: apiservice-node
+          ports:
+            - containerPort: 3000
